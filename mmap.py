@@ -1,0 +1,31 @@
+import commands as C
+
+
+COMMAND_MAP = {
+    'v': C.displayOnlyIDs,
+    'vM': C.displayTitleWithText,
+    'vT': C.displayOnlyTitles,
+    'vE': C.displayTitleTextCategorySubcategory,
+    'vF': C.displayEverything,
+    's': C.Sort,
+    'g': C.GetNote,
+    'gT': C.GetNoteByTitle,
+    'gC': C.GetAllCategories,
+    'gCS': C.GetAllSubcategoriesByCategory,
+    'r': C.RemoveNoteByID,
+    'rT': C.RemoveNoteByTitle,
+    'rC': C.RemoveCategory,
+    'rS': C.RemoveSubcategory,
+    'cIt': C.ChangeTextByID,
+    'cIT': C.ChangeTitleByID,
+    'cIC': C.ChangeCategoryByID,
+    'cIS': C.ChangeSubcategoryByID,
+    'cTt': C.ChangeTextByTitle,
+    'cTT': C.ChangeTitleByTitle,
+    'cTC': C.ChangeCategoryByTitle,
+    'cTS': C.ChangeSubcategoryByTitle,
+    'aM': C.AddNewBaseNote,
+    'aMT': C.AddNewNoteWithTitle,
+    'aMTC': C.AddNewNoteWithTitleCategory,
+    'aMTCS': C.AddNewNoteWithTitleCategorySubcategory,
+}
